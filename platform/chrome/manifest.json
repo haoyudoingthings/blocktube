@@ -2,7 +2,7 @@
   "name": "BlockTube",
   "version": "{EXT_VERSION}",
   "description": "YouTube™ content blocker",
-  "manifest_version": 2,
+  "manifest_version": 3,
   "content_scripts": [
     {
       "matches": ["https://www.youtube.com/*", "https://m.youtube.com/*"],
@@ -11,7 +11,12 @@
       "all_frames": true
     }
   ],
-  "web_accessible_resources": ["src/scripts/inject.js"],
+  "web_accessible_resources": [
+    {
+      "resources": ["src/scripts/inject.js"],
+      "matches": ["https://www.youtube.com/*", "https://m.youtube.com/*"]
+    }
+  ],
   "browser_action": {
     "default_title": "BlockTube Options",
     "default_icon": {
