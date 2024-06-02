@@ -3,6 +3,14 @@
 WebExtension for Chrome and Firefox.  
 Filter and block unwanted content from YouTube™.
 
+## Migration to manifest V3
+
+- [x] Update the manifest
+- [ ] Migrate to a service worker
+- [ ] Update API calls
+- [ ] Replacing blocking web request listeners
+- [ ] Improve extenstion security
+
 ## Extension features
 
 * Block videos via: **Video Title** / **Channel Name** / **Channel ID** / **Video ID**
